@@ -1,7 +1,7 @@
 // welcome to the jungle
 //Block 2
-module digit_signal_generator(input [1:0] dig_sel;
-			      output [3:0] digit;
+module digit_signal_generator(input [1:0] dig_sel,
+			      output reg [3:0] digit
 			      );
 
    always @ (dig_sel)

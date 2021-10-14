@@ -1,3 +1,6 @@
+
+//Block5 
+
 module dot_adder(
 		 input [6:0]  pattern,
 		 input [3:0]  dots,
@@ -17,8 +20,6 @@ module dot_adder(
        
        2'b11: output = { pattern[6:0], dots[3] };
        
-       
-
      endcase (dig_sel); // case (dig_sel)
 
 endmodule

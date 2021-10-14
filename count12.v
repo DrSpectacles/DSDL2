@@ -2,7 +2,7 @@
 //Block 1
 module count12(input clock,
 	       input  reset,
-	       output reg [1:0] dig_sel;
+	       output reg [1:0] dig_sel
 	       );
    
    reg [11:0]		  counter;
