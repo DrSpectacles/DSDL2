@@ -1,5 +1,5 @@
 // welcome to the jungle
-
+//Block 1
 module count12(input clock,
 	       input  reset,
 	       output reg [1:0] dig_sel;
