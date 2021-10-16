@@ -1,25 +1,24 @@
-
-//Block5 
+//Block 5 
 
 module dot_adder(
 		 input [6:0]  pattern,
 		 input [3:0]  dots,
-		 input [2:0]  dig_sel,
-		 output [7:0] segments
-		 
+  input [1:0]  dig_sel,
+  	     output reg [7:0] segments 
 		 );
    
-   always @ (pattern, dots, dig_sel)
+  always @ (dig_sel, pattern, dots) 
      case (dig_sel)
        
-       2'b00: output = { pattern[6:0], dots[0] };
+       2'b00: segments = { pattern, dots [0] };
 
-       2'b01: output = { pattern[6:0], dots[1] };
+       2'b01: segments = { pattern, dots [1] };
        
-       2'b10: output = { pattern[6:0], dots[2] };
+       2'b10: segments = { pattern, dots [2] };
        
-       2'b11: output = { pattern[6:0], dots[3] };
+       2'b11: segments = { pattern, dots [3] };
        
-     endcase (dig_sel); // case (dig_sel)
+     endcase // case (dig_sel)
 
 endmodule
+

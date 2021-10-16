@@ -25,8 +25,8 @@ module count12(input clock,
 	else
 	  if (pulse) dig_sel <= dig_sel + 2'd1;
 	  else dig_sel <= dig_sel;
+     end
 	
    
 endmodule
    
-
