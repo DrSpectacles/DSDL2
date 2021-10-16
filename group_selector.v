@@ -2,10 +2,8 @@
 //Block 3
 module group_selector(input [15:0] value,
 		      input [1:0]  dig_sel,
-                      
 		      output reg [3:0] selected_value
-
-		      )
+                     );
 
   always @ (dig_sel, value)
     case (dig_sel)
@@ -17,7 +15,9 @@ module group_selector(input [15:0] value,
       
       2'b11: selected_value = value[12:15];
       
-    endcase; // case (dig_sel)
+    endcase // case (dig_sel)
 
 endmodule
       
+
+
