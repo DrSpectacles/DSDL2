@@ -14,6 +14,7 @@ module count12(input clock,
      begin
 	if (reset) counter <= 12'd0;
 	else
+
 	  counter <= counter + 12'd1;
      end
    

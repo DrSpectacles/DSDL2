@@ -9,11 +9,11 @@ module group_selector(input [15:0] value,
     case (dig_sel)
       2'b00: selected_value = value[3:0];
       
-      2'b01: selected_value = value[4:7];
+      2'b01: selected_value = value[7:4];
       
-      2'b10: selected_value = value[8:11];
+      2'b10: selected_value = value[11:8];
       
-      2'b11: selected_value = value[12:15];
+      2'b11: selected_value = value[15:12];
       
     endcase // case (dig_sel)
 

@@ -1,7 +1,7 @@
-`include "count12.v"
-`include "digit_signal_generator.v"
-`include "hex2seg.v"
-`include "dot_adder.v"
+//`include "count12.v"
+//`include "digit_signal_generator.v"
+//`include "hex2seg.v"
+//`include "dot_adder.v"
 
 // welcome to the jungle
 module top(
@@ -23,3 +23,4 @@ module top(
     dot_adder add_dots (.pattern(pattern),.dots(dots),.dig_sel(dig_sel),.segments(segment));
  
 endmodule
+
