@@ -1,8 +1,3 @@
-//`include "count12.v"
-//`include "digit_signal_generator.v"
-//`include "hex2seg.v"
-//`include "dot_adder.v"
-
 // welcome to the jungle
 module top(
     input clock,
