@@ -62,6 +62,6 @@ module displayTest(
 	The segment output of your module connects to the segment signal.
 	The digit output of your module connects to the digit signal.  */
 
- 
+    top top(.clock(clk5),.reset(rstInt),.value(dispVal),.dots(swit),.segment(segment),.digit(digit) );
      
 endmodule

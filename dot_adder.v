@@ -10,13 +10,13 @@ module dot_adder(
   always @ (dig_sel, pattern, dots) 
      case (dig_sel)
        
-       2'b00: segments = { pattern, dots [0] };
+       2'b00: segments = { pattern, !(dots[0]) };
 
-       2'b01: segments = { pattern, dots [1] };
+       2'b01: segments = { pattern, !(dots[1]) };
        
-       2'b10: segments = { pattern, dots [2] };
+       2'b10: segments = { pattern, !(dots[2]) };
        
-       2'b11: segments = { pattern, dots [3] };
+       2'b11: segments = { pattern, !(dots[3]) };
        
      endcase // case (dig_sel)
 
