@@ -1,5 +1,6 @@
-//yo
-//Block 3
+// Block 3
+// Module to select one 4 bit group from the input
+
 module group_selector(input [15:0] value,
 		      input [1:0]  dig_sel,
 		      output reg [3:0] selected_value
